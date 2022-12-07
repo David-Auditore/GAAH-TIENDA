@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+    --main-color: #fd4646;
+    --text-color: #171427;
+    --bg-color: #fff;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+}
+
+header{
+    display: flex;
+    min-height: 70px;
+    background-color: var(--bg-color);
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0 1px 4px hsl(0 4% 15% / 10%);
+    z-index: 100;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+}
+
+.logo img{
+    height: 50px;
+    margin-right: 10px;
+}
+
+.logo h2{
+    font-weight: 400;
+    font-size: 1.1rem;
+    color: var(--text-color);
+}
+
+nav a{
+    padding-right: 10px;
+    font-weight: 400;
+}
+
+nav a:hover{
+    color: var(--main-color);
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* Login Box*/
+
+.container_padre{
+    padding-top: 2.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.login_box_container{
+    border: 1px solid var(--text-color);
+    justify-content: center;
+    width: 40%;
+    min-width: none;
+    margin-bottom: 30px;
+}
+
+.Login-box{
+    padding: 30px;
+}
+
+.login_title{
+    font-weight: 400;
+}
+
+.Login-box input[type="text"],
+.Login-box input[type="email"],
+.Login-box input[type="password"] {
+    border: none;
+    border-bottom: 1px solid #454546;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: rgb(69, 69 70);
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.nombres{
+    display: flex;
+}
+
+.nombre{
+    margin-right: 20px;
+}
+
+button{
+    width: 100px;
+    height: 30px;
+    border: 3px solid var(--text-color);
+    background: none;
+}
+
+button:hover{
+    background: var(--text-color);
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width:700px) {
+    header{
+        flex-direction: column;
+    }
+
+    nav{
+        padding: 10px 0px;
+    }
+
+    .login_box_container{
+        width: 70%;
+    }
+
+    .container_padre{
+        padding-top: 0;
+    }
+}

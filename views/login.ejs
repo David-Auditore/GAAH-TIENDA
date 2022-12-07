@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adidas Store Login</title>
+    <link rel="stylesheet" href="/public/css/login_style.css">
+    <link rel="shortcut icon" href="https://www.adidas.co/glass/react/fabca50/assets/img/icon-adidas-logo.svg"
+    type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="/public/img/adidas-logo.png" alt="Supuesto logo">
+            <h2 class="nombre-empresa">Adidas Store</h2>
+        </div>
+        <nav>
+            <a href="/" class="nav-link">Inicio</a>
+            <a href="/registro" class="nav-link">Registro</a>
+        </nav>
+    </header>
+
+    <div class="container_padre">
+        <div class="login_box_container">
+            <div class="Login-box">
+                <h1 class="login_title">Inicia Sesion</h1>
+                <form action="/login" method="post">
+
+                    <label for="username">Usuario</label>
+                    <input name="correo" type="email" placeholder="Ingrese correo electronico">
+
+                    <label for="password">Contraseña</label>
+                    <input name="contrasenia" type="password" placeholder="Ingrese contraseña">
+
+                    <button href="" type="submit">Inicia Sesion</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
